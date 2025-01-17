@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.furniro-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41.45px;
+
+  
+  /* New properties */
+  width: 130px;
+  height: 41px;
+
+
+}
+
+.furniro-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.furniro-logo-img {
+  width: 50px;
+  height: 32px;
+}
+
+/* Global Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #fafafa; /* Background color */
+color: #333; /* Text color */
+}
+
+@media (max-width: 768px) {
+  div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* inspiration */
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem;
+  background-color: #f8f4f1;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  box-sizing: border-box;
+  
+
+}
+
+.text-section {
+  max-width: 40%;
+  margin-right: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.explore-button {
+  background-color: #f0b60c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-image img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.thumbnail-container img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+
+.header-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.header-text-light {
+  font-size: 16px;
+  color: #4A4A4A; /* Grayish text */
+  margin: 0;
+}
+
+.header-text-bold {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000; /* Bold black text */
+  margin: 5px 0;
+}
+
+/* product grid */
+
+
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-card .details {
+  padding: 10px;
+}
+
+.product-card .details h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-card .details .price {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-card .details .add-to-cart {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff6f61;
+  color: #F9F1E7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.product-card .details .add-to-cart:hover {
+  background-color: #e65a50;
+}
+
+/* Updated Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.pagination button {
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #eee;
+  color: #555;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button.active {
+  background-color: #B88E2F;
+  color: #fff;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
